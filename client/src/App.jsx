@@ -9,7 +9,7 @@ function App() {
   const [formData, setFormData] = useState({ name: '', email: '', course: '' });
   const [editingId, setEditingId] = useState(null); // track if editing
 
-  // 1. fetch students 
+  // fetch students 
   useEffect(() => {
     fetchStudents();
   }, []);
